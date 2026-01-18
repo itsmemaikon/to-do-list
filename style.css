@@ -1,0 +1,86 @@
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --border: 0.1rem solid rgba(255, 255, 255, 0.336);
+  --bgcolor: rgba(0, 204, 255, 0.336);
+  --sucess: #22bb33;
+  --danger: #bb2124;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5;
+  overflow-x: hidden;
+}
+
+th:nth-child(2) {
+  width: 80%;
+}
+
+th:nth-child(3) {
+  width: 12%;
+}
+
+td {
+  font-size: 0.95rem;
+}
+
+.container {
+  margin: 1.5rem 5%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bgcolor);
+  border-radius: 1rem;
+  border: var(--border);
+}
+
+.action {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+#taskInput,
+.btn {
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+}
+
+.btn {
+  font-weight: 700;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 0.85rem;
+}
+
+.btn.add {
+  background-color: var(--sucess);
+}
+
+.btn.delete {
+  background-color: var(--danger);
+  height: 1.5rem;
+}
+
+#taskList {
+  width: 100%;
+}

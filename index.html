@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, max-scale=1.0"
+    />
+    <title>To-Do List Simples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <h1>To-Do List Simples</h1>
+      <div class="action">
+        <input
+          type="text"
+          name="taskInput"
+          id="taskInput"
+          placeholder="Escreva a descrição da tarefa"
+        />
+        <button id="addTask" onclick="addTask()" class="btn add">
+          Incluir Tarefa
+        </button>
+      </div>
+      <table id="taskList">
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Data</th>
+          <th>Ação</th>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
